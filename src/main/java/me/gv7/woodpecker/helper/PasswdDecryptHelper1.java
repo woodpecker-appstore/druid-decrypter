@@ -35,7 +35,7 @@ public class PasswdDecryptHelper1 implements IHelper {
         String password = (String)customArgs.get("encrypt_password");
         try {
             String content = ConfigTools.decrypt(password);
-            iResultOutput.successPrintln("Encryt result:");
+            iResultOutput.successPrintln("Decryt result:");
             iResultOutput.rawPrintln("\n" + content + "\n");
         } catch (Exception var6) {
             iResultOutput.errorPrintln(DruidPasswdDcrypter.pluginHelper.getThrowableInfo(var6));
